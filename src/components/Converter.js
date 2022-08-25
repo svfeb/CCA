@@ -111,12 +111,11 @@ function Converter() {
               }}
               value={to}
 
-              // onMouseOut={changeSymbol}
-              // onMouseOver={changeSymbol}
+              onMouseOut={changeSymbol}
+              onMouseOver={changeSymbol}
             >
               {Data.map((item) => (
                 <option
-                  onClick={item.changeSymbol}
                   key={item.id}
                   value={item.exchangeRate}
                 >
